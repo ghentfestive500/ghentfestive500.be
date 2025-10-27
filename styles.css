@@ -9,6 +9,10 @@ a {
     color: var(--gf-blue);
 }
 
+a:hover {
+    text-decoration-color: var(--gf-blue);
+}
+
 nav strong {
     color: var(--gf-pink);
 }
@@ -82,7 +86,7 @@ section img {
         grid-template-columns: 1fr;
     }
 
-    .acht-dagen > div {
+    .acht-dagen>div {
         order: 1;
     }
 
