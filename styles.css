@@ -118,6 +118,10 @@ footer {
     filter: brightness(0) saturate(100%) invert(57%) sepia(94%) saturate(1745%) hue-rotate(170deg) brightness(98%) contrast(101%);
 }
 
+.icon-theme {
+    filter: brightness(0) saturate(100%) invert(57%) sepia(94%) saturate(1745%) hue-rotate(170deg) brightness(98%) contrast(101%);
+}
+
 header hgroup p {
     background: linear-gradient(to right, var(--gf-pink), var(--gf-blue), var(--gf-red));
     -webkit-background-clip: text;

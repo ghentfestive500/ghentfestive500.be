@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
     <title>Kalender - Ghent Festive 500</title>
     <meta name="description" content="Kalender van de Ghent Festive 500 ritten - 24 tot 31 december">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -12,27 +13,7 @@
 </head>
 
 <body>
-    <nav class="container">
-        <ul>
-            <li><strong>Ghent Festive 500</strong></li>
-        </ul>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="kalender.html">Kalender</a></li>
-            <li><a href="mailto:info@ghentfestive500.be" aria-label="Email">
-                    <img src="images/icon-envelope.svg" alt="" class="icon icon-email">
-                </a></li>
-            <li><a href="https://www.instagram.com/ghentfestive500/" target="_blank" rel="noopener"
-                    aria-label="Instagram">
-                    <img src="images/icon-instagram.svg" alt="" class="icon icon-instagram">
-                </a></li>
-            <li><a href="https://www.strava.com/clubs/ghentfestive500" target="_blank" rel="noopener"
-                    aria-label="Strava">
-                    <img src="images/icon-strava.svg" alt="" class="icon icon-strava">
-                </a></li>
-
-        </ul>
-    </nav>
+    <div id="header-placeholder"></div>
 
     <main class="container">
         <header>
@@ -47,12 +28,18 @@
     <div id="footer-placeholder"></div>
 
     <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-placeholder').innerHTML = html;
+            });
         fetch('footer.html')
             .then(response => response.text())
             .then(html => {
                 document.getElementById('footer-placeholder').innerHTML = html;
             });
     </script>
+    <script src="js/minimal-theme-switcher.js"></script>
 </body>
 
 </html>
