@@ -38,7 +38,7 @@ h3 {
 
 .rapha-logo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -81,35 +81,6 @@ section img {
     max-height: 300px;
 }
 
-@media (max-width: 768px) {
-    .acht-dagen.grid {
-        grid-template-columns: 1fr;
-    }
-
-    .acht-dagen>div {
-        order: 1;
-    }
-
-    .rapha-logo {
-        order: 2;
-        text-align: center;
-        margin-top: -1rem;
-    }
-
-    .rapha-logo img {
-        max-height: 180px;
-        max-width: 80%;
-    }
-
-    .club-logos .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .club-logos .grid img {
-        max-height: 150px;
-    }
-}
-
 footer {
     margin-bottom: 2rem;
 }
@@ -127,12 +98,6 @@ footer {
     gap: 1.5rem;
 }
 
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-}
 
 .icon {
     width: 1.25em;
@@ -172,4 +137,39 @@ header hgroup p {
     width: 100%;
     min-height: 500px;
     border: none;
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+    .acht-dagen.grid {
+        grid-template-columns: 1fr;
+    }
+
+    .acht-dagen>div {
+        order: 1;
+    }
+
+    .rapha-logo {
+        order: 2;
+        text-align: center;
+        margin-top: -1rem;
+        justify-content: center;
+    }
+
+    .rapha-logo img {
+        max-width: 50%;
+    }
+
+    .club-logos .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .club-logos .grid img {
+        max-height: 150px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
