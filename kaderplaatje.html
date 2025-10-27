@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>Kaderplaatje - Ghent Festive 500</title>
+    <meta name="description"
+        content="Koop een gepersonaliseerd kaderplaatje voor je fiets. Alle winst gaat naar Op Wielekes.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+        <header>
+            <hgroup>
+                <h1>Kaderplaatje</h1>
+                <p>Steun Op Wielekes met een gepersonaliseerd kaderplaatje</p>
+            </hgroup>
+        </header>
+
+        <section>
+            <div class="acht-dagen grid">
+                <div>
+                
+                    <p>
+                        Nieuw dit jaar: het kaderplaatje vervangt de stempelkaart! Dit funky plaatje bevestig je op je
+                        fiets
+                        en toont hoeveel ritten je hebt gereden tijdens de Ghent Festive 500.
+                    </p>
+                    <h3>Waarom een kaderplaatje?</h3>
+                    <ul>
+                        <li>Zichtbaar tijdens én na de Festive</li>
+                        <li>Gepersonaliseerd met jouw naam en optioneel clubnaam</li>
+                        <li>Vink af welke ritten je hebt gereden</li>
+                        <li>Steun een goed doel</li>
+                    </ul>
+                </div>
+                
+                <!-- <figure class="rapha-logo"> -->
+                    <img src="images/kaderplaatje.webp" alt="Kaderplaatje Ghent Festive 500" class="kaderplaatje-img">
+                <!-- </figure> -->
+            </div>
+        </section>
+
+        <section>
+            <h2>Bestellen</h2>
+            <p>
+                Bestel vooraf je gepersonaliseerd plaatje via een vrije bijdrage (richtprijs €2). Alle opbrengst gaat
+                naar
+                <a href="https://www.opwielekes.be/" target="_blank" rel="noopener">Op Wielekes</a>, de Gentse
+                fietsbibliotheek waar kinderen aan sociale tarieven een kwalitatieve fiets kunnen huren. Door een
+                kaderplaatje
+                aan te kopen, steun je deze organisatie en help je meer kinderen op de fiets.
+            </p>
+            <p>
+                Gepersonaliseerde plaatjes kunnen besteld worden tot <strong>30 november</strong>.
+            </p>
+            <p>
+                Ter plaatse zijn ook blanco plaatjes verkrijgbaar zonder personalisatie. Deze kunnen met een permanente
+                marker gepersonaliseerd worden.
+            </p>
+
+            <script async src="https://js.stripe.com/v3/buy-button.js">
+            </script>
+
+            <div style="display: flex; justify-content: center; margin-top: 2rem;">
+                <stripe-buy-button buy-button-id="buy_btn_1SMz2r4IjQGp2v1Cz0tVcJRA"
+                    publishable-key="pk_live_51SLAfO4IjQGp2v1CPE9uzlHqJjY9ufKO6uq1uh3cLJil4LP6BNu2vC7zTbqmx4j19kEfTbb1674G8OQn0Wo5Vzkt00yctvW5PC">
+                </stripe-buy-button>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-placeholder').innerHTML = html;
+            });
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-placeholder').innerHTML = html;
+            });
+    </script>
+    <script src="js/theme-switcher.js"></script>
+</body>
+
+</html>
