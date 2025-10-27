@@ -106,6 +106,10 @@ section img {
     }
 }
 
+footer {
+    margin-bottom: 2rem;
+}
+
 .footer-content {
     display: flex;
     justify-content: space-between;
