@@ -1,0 +1,138 @@
+:root {
+    --gf-pink: #E33A93;
+    --gf-cyan: #7BCED5;
+    --gf-blue: #01B1EC;
+    --gf-red: #ED1C25;
+}
+
+a {
+    color: var(--gf-blue);
+}
+
+nav strong {
+    color: var(--gf-pink);
+}
+
+header h1 {
+    color: var(--gf-pink);
+}
+
+h2 {
+    color: var(--gf-cyan);
+}
+
+h3 {
+    color: var(--gf-pink);
+}
+
+.concept-intro {
+    display: grid;
+    grid-template-columns: 0.8fr 0.3fr;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.rapha-logo img {
+    max-width: 100%;
+    max-height: 250px;
+    margin: 0;
+}
+
+section img {
+    margin: 0.25rem 0;
+}
+
+.club-logos .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0rem 1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.club-logos .grid a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.club-logos .grid img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 300px;
+}
+
+@media (max-width: 768px) {
+    .club-logos .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0rem 1rem;
+    }
+
+    .club-logos .grid img {
+        max-height: 150px;
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.icon {
+    width: 1.25em;
+    height: 1.25em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-instagram {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(95%) saturate(2792%) hue-rotate(310deg) brightness(94%) contrast(90%);
+}
+
+.icon-strava {
+    filter: brightness(0) saturate(100%) invert(44%) sepia(95%) saturate(4764%) hue-rotate(359deg) brightness(103%) contrast(99%);
+}
+
+.icon-email {
+    filter: brightness(0) saturate(100%) invert(57%) sepia(94%) saturate(1745%) hue-rotate(170deg) brightness(98%) contrast(101%);
+}
+
+header hgroup p {
+    background: linear-gradient(to right, var(--gf-pink), var(--gf-blue), var(--gf-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.strava-calendar iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.calendar-embed {
+    width: 100%;
+    min-height: 500px;
+    border: none;
+}
