@@ -1,5 +1,5 @@
 /*!
- * Minimal theme switcher
+ * Theme switcher
  *
  * Pico.css - https://picocss.com
  * Copyright 2019-2024 - Licensed under MIT
@@ -17,7 +17,19 @@ const themeSwitcher = {
   // Init
   init() {
     this.scheme = this.schemeFromLocalStorage;
-    this.initSwitchers();
+
+    // Wait for header to load before initializing switchers
+    const initWhenReady = () => {
+      const buttons = document.querySelectorAll(this.buttonsTarget);
+      if (buttons.length > 0) {
+        this.initSwitchers();
+      } else {
+        // Retry after a short delay if header hasn't loaded yet
+        setTimeout(initWhenReady, 50);
+      }
+    };
+
+    initWhenReady();
   },
 
   // Get color scheme from local storage
@@ -40,6 +52,11 @@ const themeSwitcher = {
         document.querySelector(this.menuTarget)?.removeAttribute("open");
       }, false);
     });
+
+    // If buttons exist, update visibility immediately
+    if (buttons.length > 0) {
+      this.updateIconVisibility();
+    }
   },
 
   // Set scheme
@@ -61,6 +78,23 @@ const themeSwitcher = {
   // Apply scheme
   applyScheme() {
     document.querySelector("html")?.setAttribute(this.rootAttribute, this.scheme);
+    this.updateIconVisibility();
+  },
+
+  // Update icon visibility based on current scheme
+  updateIconVisibility() {
+    const lightButton = document.querySelector('a[data-theme-switcher="light"]');
+    const darkButton = document.querySelector('a[data-theme-switcher="dark"]');
+
+    if (this.scheme === "dark") {
+      // In dark mode, show light/sun icon
+      lightButton?.parentElement.style.setProperty('display', 'block', 'important');
+      darkButton?.parentElement.style.setProperty('display', 'none', 'important');
+    } else {
+      // In light mode, show dark/moon icon
+      lightButton?.parentElement.style.setProperty('display', 'none', 'important');
+      darkButton?.parentElement.style.setProperty('display', 'block', 'important');
+    }
   },
 
   // Store scheme to local storage

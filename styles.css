@@ -81,6 +81,22 @@ section img {
     max-height: 300px;
 }
 
+.club-logos .logo-dark {
+    display: none;
+}
+
+.club-logos .logo-light {
+    display: block;
+}
+
+html[data-theme="dark"] .club-logos .logo-dark {
+    display: block;
+}
+
+html[data-theme="dark"] .club-logos .logo-light {
+    display: none;
+}
+
 footer {
     margin-bottom: 2rem;
 }
