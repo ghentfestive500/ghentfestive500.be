@@ -6,11 +6,11 @@
 }
 
 a {
-    color: var(--gf-blue);
+    color: var(--gf-cyan);
 }
 
 a:hover {
-    text-decoration-color: var(--gf-blue);
+    text-decoration-color: var(--gf-cyan);
 }
 
 nav strong {
