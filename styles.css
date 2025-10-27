@@ -124,6 +124,7 @@ footer {
 
 .icon-instagram {
     filter: brightness(0) saturate(100%) invert(38%) sepia(95%) saturate(2792%) hue-rotate(310deg) brightness(94%) contrast(90%);
+
 }
 
 .icon-strava {
@@ -131,11 +132,11 @@ footer {
 }
 
 .icon-email {
-    filter: brightness(0) saturate(100%) invert(57%) sepia(94%) saturate(1745%) hue-rotate(170deg) brightness(98%) contrast(101%);
+    filter: brightness(0) saturate(100%) invert(80%) sepia(17%) saturate(1089%) hue-rotate(147deg) brightness(92%) contrast(88%);
 }
 
 .icon-theme {
-    filter: brightness(0) saturate(100%) invert(57%) sepia(94%) saturate(1745%) hue-rotate(170deg) brightness(98%) contrast(101%);
+    filter: brightness(0) saturate(100%) invert(80%) sepia(17%) saturate(1089%) hue-rotate(147deg) brightness(92%) contrast(88%);
 }
 
 header hgroup p {
