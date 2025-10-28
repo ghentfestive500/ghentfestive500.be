@@ -5,6 +5,19 @@
     --gf-red: #ED1C25;
 }
 
+@font-face {
+  font-family: "GF";
+  src: url("fonts/GhentFestive500-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "GF";
+  src: url("fonts/GhentFestive500-Bold.ttf") format("opentype");
+  font-weight: bold;
+}
+
+* { font-family: "GF" !important; }
+
 a {
     color: var(--gf-cyan);
 }
