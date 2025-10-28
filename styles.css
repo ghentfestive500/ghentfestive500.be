@@ -17,6 +17,12 @@ nav strong {
     color: var(--gf-pink);
 }
 
+.site-logo {
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 header h1 {
     color: var(--gf-pink);
 }
@@ -116,8 +122,8 @@ footer {
 
 
 .icon {
-    width: 1.25em;
-    height: 1.25em;
+    width: 1em;
+    height: 1em;
     display: inline-block;
     vertical-align: middle;
 }
@@ -162,7 +168,7 @@ header hgroup p {
     border: none;
 }
 
-/* responsive design */
+
 @media (max-width: 768px) {
     .acht-dagen.grid {
         grid-template-columns: 1fr;
