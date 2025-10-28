@@ -55,7 +55,7 @@ h3 {
 }
 
 section img {
-    margin: 0.25rem 0;
+    margin: 1rem 0;
 }
 
 .kaderplaatje-img {
@@ -83,6 +83,7 @@ section img {
 .club-logos .grid img {
     max-width: 100%;
     height: auto;
+    margin: 0.25rem 0;
     object-fit: contain;
     max-height: 300px;
 }
@@ -150,6 +151,16 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.button-cyan {
+    background-color: var(--gf-cyan);
+    border-color: var(--gf-cyan);
+}
+
+.button-cyan:hover {
+    background-color: var(--gf-pink);
+    border-color: var(--gf-pink);
 }
 
 header hgroup p {
