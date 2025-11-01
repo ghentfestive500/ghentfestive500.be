@@ -210,6 +210,7 @@ header hgroup p {
     width: 100%;
     min-height: 500px;
     border: none;
+    display: block;
 }
 
 /* Mobile menu */

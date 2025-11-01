@@ -15,13 +15,19 @@
 <body>
     <div id="header-placeholder"></div>
 
-    <main class="container">
-        <header>
-            <h1>Kalender</h1>
-        </header>
+    <main>
+        <div class="container">
+            <header>
+                <h1>Kalender</h1>
+            </header>
+        </div>
 
         <section>
-            <object class="calendar-embed" data="strava-calendar.html" type="text/html"></object>
+
+            <body style="margin: 0; padding: 0; overflow: hidden;">
+                <object style="width: 100vw; height: 100vh; border: none; display: block;" <object
+                    class="calendar-embed" data="strava-calendar.html" type="text/html"></object>
+            </body>
         </section>
     </main>
 
