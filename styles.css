@@ -6,17 +6,19 @@
 }
 
 @font-face {
-  font-family: "GF";
-  src: url("fonts/GhentFestive500-Regular.ttf") format("opentype");
+    font-family: "GF";
+    src: url("fonts/GhentFestive500-Regular.ttf") format("opentype");
 }
 
 @font-face {
-  font-family: "GF";
-  src: url("fonts/GhentFestive500-Bold.ttf") format("opentype");
-  font-weight: bold;
+    font-family: "GF";
+    src: url("fonts/GhentFestive500-Bold.ttf") format("opentype");
+    font-weight: bold;
 }
 
-* { font-family: "GF" !important; }
+* {
+    font-family: "GF" !important;
+}
 
 a {
     color: var(--gf-cyan);
@@ -38,6 +40,22 @@ nav strong {
 
 header h1 {
     color: var(--gf-pink);
+}
+
+.header-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 2rem 0;
+    position: relative;
+}
+
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 h2 {
