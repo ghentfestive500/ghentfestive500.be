@@ -210,8 +210,36 @@ header hgroup p {
     border: none;
 }
 
+/* Mobile menu */
+.nav-menu-mobile {
+    display: none;
+}
+
+.nav-links-desktop {
+    display: block;
+}
+
+.nav-menu-mobile details[role="list"] summary,
+.nav-menu-mobile details.dropdown summary {
+    background-color: var(--gf-cyan) !important;
+    border-color: var(--gf-cyan) !important;
+}
+
+.nav-menu-mobile details[role="list"] summary:hover,
+.nav-menu-mobile details.dropdown summary:hover {
+    background-color: var(--gf-pink) !important;
+    border-color: var(--gf-pink) !important;
+}
 
 @media (max-width: 768px) {
+    .nav-links-desktop {
+        display: none;
+    }
+
+    .nav-menu-mobile {
+        display: block;
+    }
+
     .acht-dagen.grid {
         grid-template-columns: 1fr;
     }
