@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>Wegkapiteins - Ghent Festive 500</title>
+    <meta name="description"
+        content="Word wegkapitein tijdens de Ghent Festive 500. Help mee om de social rides veilig en vlot te laten verlopen.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+        <header>
+            <hgroup>
+                <h1>Wegkapiteins</h1>
+            </hgroup>
+        </header>
+
+        <section>
+            <p>
+                De Ghent Festive 500 kan niet plaatsvinden zonder enthousiaste wegkapiteins die de groepen begeleiden.
+                Als wegkapitein sta je in voor het vlot en veilig verloop van de rit. Je geeft de nodige seinen,
+                bewaakt de veiligheid van de groep in het verkeer en zorgt voor een comfortabel tempo zodat iedereen mee
+                kan.
+            </p>
+            <p>
+                Geïnteresseerd om wegkapitein te zijn tijdens de Festive? Vul het formulier hieronder in en we
+                contacteren je
+                met meer informatie.
+            </p>
+        </section>
+
+        <section>
+            <h2>Inschrijven</h2>
+            <iframe data-tally-src="https://tally.so/embed/w2qlLL?alignLeft=1&hideTitle=1&dynamicHeight=1"
+                loading="lazy" width="100%" height="1692" frameborder="0" marginheight="0" marginwidth="0" title="Wegkapiteins 
+Ghent Festive 500 "></iframe>
+            <script>var d = document, w = "https://tally.so/widgets/embed.js", v = function () { "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function (e) { e.src = e.dataset.tallySrc })) }; if ("undefined" != typeof Tally) v(); else if (d.querySelector('script[src="' + w + '"]') == null) { var s = d.createElement("script"); s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s); }</script>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-placeholder').innerHTML = html;
+            });
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-placeholder').innerHTML = html;
+            });
+    </script>
+    <script src="js/theme-switcher.js"></script>
+</body>
+
+</html>
