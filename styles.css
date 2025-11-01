@@ -200,6 +200,13 @@ header hgroup p {
     font-size: 2rem;
 }
 
+.strava-calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .strava-calendar iframe {
     width: 100%;
     height: 100%;
@@ -209,8 +216,9 @@ header hgroup p {
 .calendar-embed {
     width: 100%;
     min-height: 500px;
-    border: none;
+    border: none !important;
     display: block;
+    outline: none;
 }
 
 /* Mobile menu */
