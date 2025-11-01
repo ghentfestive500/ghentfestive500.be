@@ -213,14 +213,6 @@ header hgroup p {
     border: none;
 }
 
-.calendar-embed {
-    width: 100%;
-    min-height: 500px;
-    border: none !important;
-    display: block;
-    outline: none;
-}
-
 /* Mobile menu */
 .nav-menu-mobile {
     display: none;

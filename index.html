@@ -180,9 +180,11 @@
         <section id="kalender">
             <h2>Kalender</h2>
 
-            <div class="strava-calendar">
-                <iframe id="strava-calendar-iframe" src="https://kalender.ghentfestive500.be/iframe"></iframe>
-            </div>
+            <section>
+                <div class="strava-calendar">
+                    <iframe id="strava-calendar-iframe" src="https://kalender.ghentfestive500.be/iframe"></iframe>
+                </div>
+            </section>
         </section>
     </main>
 
@@ -201,6 +203,16 @@
             });
     </script>
     <script src="js/theme-switcher.js"></script>
+    <script>
+        iframeResize(
+            {
+                license: 'GPLv3',
+                waitForLoad: true,
+                heightCalculationMethod: 'lowestElement',
+            },
+            '#strava-calendar-iframe',
+        );
+    </script>
 </body>
 
 </html>
