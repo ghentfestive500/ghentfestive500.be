@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>Foto's - Ghent Festive 500</title>
+    <meta name="description"
+        content="Bekijk de foto's van de Ghent Festive 500. Herinneringen aan de social rides van alle edities.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+        <header>
+            <hgroup>
+                <h1>Foto's</h1>
+            </hgroup>
+        </header>
+
+        <section>
+            <p>
+
+                Hier vind je alle sfeerbeelden van de Ghent Festive 500.
+            </p>
+            <p>
+                Heb je zelf foto's gemaakt tijdens de ritten? Voegen ze toe aan het album. Zo bouwen we samen aan een
+                mooie herinnering voor alle deelnemers.
+            </p>
+            <p style="text-align: center; margin: 2rem 0;">
+                <a href="https://photos.app.goo.gl/9G8QiUmX5ybWwaX48" target="_blank" rel="noopener" role="button"
+                    class="button-cyan">
+                    Google photos album
+                </a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Privacy</h2>
+            <p>
+                Door deel te nemen aan de Ghent Festive 500 ga je ermee akkoord dat er foto's gemaakt kunnen worden
+                tijdens de ritten waarop je zichtbaar bent. De foto's die we maken zijn groepsfoto's en sfeerbeelden,
+                geen gerichte portretfoto's van individuele deelnemers.
+
+
+            </p>
+            <p>
+
+                Je hebt te allen tijde het recht om te vragen dat foto's waarop je herkenbaar bent verwijderd worden.
+                Neem hiervoor contact met ons op via het mail-icoon met vermelding van:
+                welke foto('s) het betreft.
+            </p>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-placeholder').innerHTML = html;
+            });
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-placeholder').innerHTML = html;
+            });
+    </script>
+    <script src="js/theme-switcher.js"></script>
+</body>
+
+</html>
