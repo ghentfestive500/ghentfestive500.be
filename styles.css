@@ -242,6 +242,16 @@ footer {
     border-color: var(--gf-pink);
 }
 
+.button-pink {
+    background-color: var(--gf-pink);
+    border-color: var(--gf-pink);
+}
+
+.button-pink:hover {
+    background-color: var(--gf-cyan);
+    border-color: var(--gf-cyan);
+}
+
 header hgroup p {
     font-size: 2rem;
 }

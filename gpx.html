@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>GPX Routes - Ghent Festive 500</title>
+    <meta name="description"
+        content="Download GPX-bestanden voor alle routes van de Ghent Festive 500. Importeer ze in je fietscomputer of navigatie-app.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+        <header>
+            <hgroup>
+                <h1>GPX</h1>
+            </hgroup>
+        </header>
+
+        <section>
+            <p>
+                Download de GPX bestanden van de routes van de 2025 editie van de Ghent Festive 500.
+            </p>
+            <div class="grid">
+                <a href="resources/ghent-festive-500-alle-routes.zip" role="button" class="button-pink" download>
+                    Download alle routes (ZIP)
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2><a href="https://www.club9000.be/" target="_blank" rel="noopener">Club 9000</a></h2>
+            <div class="grid">
+                <a href="resources/GF500 - Club 9000 - 75km.gpx" role="button" class="button-cyan" download>Download
+                    75km route</a>
+                <a href="resources/GF500 - Club 9000 - 100km.gpx" role="button" class="button-cyan" download>Download
+                    100km route</a>
+            </div>
+        </section>
+
+        <section>
+            <h2><a href="https://cafemerino.be/cyclo-merino" target="_blank" rel="noopener">Cyclo Merino</a></h2>
+            <div class="grid">
+                <a href="resources/GF500 - Merino - 75km.gpx" role="button" class="button-cyan" download>Download 75km
+                    route</a>
+            </div>
+        </section>
+
+        <section>
+            <h2><a href="https://www.mtbgent.be/" target="_blank" rel="noopener">MTB Gent / Gravel grinders</a></h2>
+            <div class="grid">
+                <a href="resources/GF500 2025 - MTB Gent - 75km.gpx" role="button" class="button-cyan" download>Download
+                    75km route</a>
+                <a href="resources/GF500 2025 - MTB Gent - 100km.gpx" role="button" class="button-cyan"
+                    download>Download 100km route</a>
+            </div>
+        </section>
+
+        <section>
+            <h2><a href="https://robocyclo.be/" target="_blank" rel="noopener">Robocyclo</a></h2>
+            <div class="grid">
+                <a href="resources/GF500 2025 - Robocyclo - 75km.gpx" role="button" class="button-cyan"
+                    download>Download 75km route</a>
+                <a href="resources/GF500 2025 - Robocyclo - 100km.gpx" role="button" class="button-cyan"
+                    download>Download 100km route</a>
+            </div>
+        </section>
+
+        <section>
+            <h2><a href="https://rpmsouplesse.com/" target="_blank" rel="noopener">RPM Souplesse</a></h2>
+            <div class="grid">
+                <a href="resources/GF500 - RPM Souplesse - 75km.gpx" role="button" class="button-cyan" download>Download
+                    75km route</a>
+                <a href="resources/GF500 - RPM Souplesse - 100km.gpx" role="button" class="button-cyan"
+                    download>Download 100km route</a>
+            </div>
+        </section>
+
+        <section>
+            <h2><a href="https://spaakenspier.be/" target="_blank" rel="noopener">Spaak en Spier</a></h2>
+            <div class="grid">
+                <a href="resources/GF500 - Spaak en Spier - 75km.gpx" role="button" class="button-cyan"
+                    download>Download 75km route</a>
+                <a href="resources/GF500 - Spaak en Spier - 100km.gpx" role="button" class="button-cyan"
+                    download>Download 100km route</a>
+            </div>
+        </section>
+
+        <section>
+            <h2><a href="https://www.vitesse9000.be/" target="_blank" rel="noopener">Vitesse 9000</a></h2>
+            <div class="grid">
+                <a href="resources/GF500 2025 - Vitesse 9000 - 75km.gpx" role="button" class="button-cyan"
+                    download>Download 75km route</a>
+                <a href="resources/GF500 2025 - Vitesse 9000 - 100km.gpx" role="button" class="button-cyan"
+                    download>Download 100km route</a>
+            </div>
+        </section>
+
+        <section>
+            <h2><a href="https://wtcmeerakker.be/" target="_blank" rel="noopener">WTC Meerakker</a></h2>
+            <div class="grid">
+                <a href="resources/GF500 - WTC Meerakker - 75 km.gpx" role="button" class="button-cyan"
+                    download>Download 75km route</a>
+                <a href="resources/GF500 - WTC Meerakker - 100 km.gpx" role="button" class="button-cyan"
+                    download>Download 100km route</a>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-placeholder').innerHTML = html;
+            });
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-placeholder').innerHTML = html;
+            });
+    </script>
+    <script src="js/theme-switcher.js"></script>
+</body>
+
+</html>
