@@ -132,6 +132,10 @@ section img {
     display: block;
 }
 
+.foto-credits {
+  font-size: 60%;
+}
+
 html[data-theme="dark"] .club-logos .logo-dark {
     display: block;
 }
